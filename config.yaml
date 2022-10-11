@@ -97,6 +97,7 @@ orgs:
       - InfoSec812
       - ippul
       - itewk
+      - ivarmu
       - jacobsee
       - jarcher
       - jayfray12
@@ -179,7 +180,9 @@ orgs:
       - prakritiverma
       - radudd
       - raedrizk
+      - rafamqrs
       - raffaelespazzoli
+      - raffamendes
       - ramius345
       - ravisantoshgudimetla
       - rdruss
@@ -200,6 +203,7 @@ orgs:
       - sean-m-sullivan
       - seravat
       - shah-zobair
+      - silvinux
       - skypatrolcpt
       - Smithe2413
       - smrowley
@@ -359,9 +363,11 @@ orgs:
           - bontreger
           - branic
           - djdanielsson
+          - ivarmu
           - kedark3
           - mpetrive-rh
           - sean-m-sullivan
+          - silvinux
           - Tompage1994
           - victorock
         privacy: closed
@@ -383,7 +389,7 @@ orgs:
           ee_utilities: write
           controller_configuration: write
           services_catalog_configuration: write
-          tower_configuration_examples: write
+          aap_configuration_template: write
           aap_utilities: write
         teams:
           automation-cop-mgrs:
@@ -411,19 +417,20 @@ orgs:
               molecule_cicd_automation: admin
               ee_utilities: admin
               controller_configuration: admin
-              tower_configuration_examples: admin
+              aap_configuration_template: admin
               aap_utilities: admin
               services_catalog_configuration: admin
       automation-cop-tower-mgrs:
         description: Tower managers of Automation CoP
         maintainers:
+          - djdanielsson
           - sean-m-sullivan
           - Tompage1994
         repos:
           ah_configuration: admin
           ee_utilities: admin
           controller_configuration: admin
-          tower_configuration_examples: admin
+          aap_configuration_template: admin
           aap_utilities: admin
           services_catalog_configuration: admin
         privacy: closed
@@ -771,6 +778,7 @@ orgs:
                   pipeline-library: admin
                   spring-rest: write
                   template2helm: admin
+                  openshift-management: admin
           declarative-openshift:
             description: Maintainers of the declarative-openshift repo
             maintainers:
@@ -1119,29 +1127,39 @@ orgs:
           - raffaelespazzoli
         privacy: closed
         repos: {}
-      ninja-program:
+      giveback-program:
         description: ""
         maintainers:
           - sabre1041
-          - etsauer
-        members:
           - matallen
+        members:
+          - rafamqrs
+          - branic
+          - raffamendes
         privacy: closed
         repos:
           ninja-board: read
           ninja-points: read
         teams:
-          ninja-program-admins:
+          giveback-program-admins:
             description: ""
             maintainers:
               - sabre1041
-              - etsauer
-            members:
-              - AdlerFleurant
-              - Arman084
-              - fostimus
-              - jtlnguyen
               - matallen
+            members: []
+            privacy: closed
+            repos:
+              ninja-board: admin
+              ninja-points: admin
+          giveback-program-technical:
+            description: ""
+            maintainers:
+              - sabre1041
+              - matallen
+            members:
+              - rafamqrs
+              - branic
+              - raffamendes
             privacy: closed
             repos:
               ninja-board: admin
